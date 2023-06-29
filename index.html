@@ -18,15 +18,18 @@
 <body>
 <header id="start">
   <nav>
-  <button id="toggle-menu" class="mdi mdi-menu"></button>
+    <div class="header">
+    <img src="public/img/Aerosol_logo.svg" alt="logo" class="logo">
+    <button id="toggle-menu" class="mdi mdi-menu"></button>
+    </div>
     <ul id="menu" class="nav-list">
-      <li><a href="#">Home</a></li>
+      <li class="dissappear"><a href="#"><img src="public/img/Aerosol_logo.svg" alt="logo" class="nav-list__logo"></a></li>
       <li><a href="#news">News</a> </li>
       <li><a href="#">Offer</a> </li>
       <li><a href="#">About us</a> </li>
       <li><a href="#">Carrier</a> </li>
       <li><a href="#">Contact</a> </li>
-      <li><a href="#"><img src="public/img/european%20flag.png" alt="#" /></a></li>
+      <li class="dissappear"><a href="#"><img src="public/img/european%20flag.png" alt="#" class="nav-list__flag"></a></li>
     </ul>
   </nav>
 </header>
@@ -86,9 +89,24 @@
           </label>
           <label for="message" class="contact__label"><textarea name="message" id="message" class="contact__input contact__input-text_area" placeholder="Wiadomosc" required ></textarea></label>
       </fieldset>
-
-
     </form>
   </section>
 </main>
 </body>
+<footer id="footer" class="footer">
+  <ul class="footer__company-data">
+  <ul class="footer__picture">
+    <li><img src="public/img/Aerosol_logo.svg" alt="AS"></li>
+  </ul>
+  <ul class="footer__description">
+    <li><p>Aerosol Service Sp. z o.o.</p></li>
+    <li><p>Charnowo 36,</p></li>
+    <li><p>76-270 Ustka, Poland</p></li>
+    <li><p>NIP: 8393056472</p></li>
+  </ul>
+  </ul>
+  <ul class="footer__social-media">
+    <li><p>© Aerosol Service Sp. z o.o.</p></li>
+    <li><img src="public/img/facebook.svg" alt="facebook"><img src="public/img/linkedin.svg" alt="linkedin"></li>
+  </ul>
+</footer>

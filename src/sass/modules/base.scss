@@ -15,7 +15,7 @@ a {
   color: $ternarycolor;
 
   &:hover {
-    @media (min-width: $breakpoint) {
+    @media (min-width: $breakpointHD) {
       text-decoration: none;
     }
   }

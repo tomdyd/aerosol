@@ -24,7 +24,7 @@
 #meet-us-position{
   position: absolute;
   left: 10%;
-  top: 43%;
+  top: 23%;
   margin: 0 33% 0 0;
   padding: 0;
 
@@ -50,7 +50,7 @@
     background: red;
   }
 
-  @media (min-width: $breakpoint) {
+  @media (min-width: $breakpointHD) {
 
     margin: 0 55% 0 0;
 
@@ -90,7 +90,7 @@
   padding: 0;
   color: $ternarycolor;
 
-  @media (min-width: $breakpoint) {
+  @media (min-width: $breakpointHD) {
     display: flex;
     justify-content: flex-start;
   }
@@ -99,7 +99,7 @@
     font-size: 35px;
     font-weight: bold;
 
-    @media (min-width: $breakpoint) {
+    @media (min-width: $breakpointHD) {
       font-size: 70px;
       font-weight: bold;
       margin: 46.9px 60px;
@@ -108,7 +108,7 @@
 
   p{
     text-decoration: underline;
-    @media (min-width: $breakpoint) {
+    @media (min-width: $breakpointHD) {
       display: none;
     }
   }
@@ -122,7 +122,7 @@
   flex-wrap: wrap;
   padding: 0;
 
-  @media (min-width: $breakpoint) {
+  @media (min-width: $breakpointHD) {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -141,7 +141,7 @@
     height: auto;
     border-radius: 20px;
 
-    @media (min-width: $breakpoint) {
+    @media (min-width: $breakpointHD) {
       width: 300px;
       height: auto;
     }
@@ -155,7 +155,7 @@
     color: $ternarycolor;
     font-weight: bold;
 
-    @media (min-width: $breakpoint) {
+    @media (min-width: $breakpointHD) {
       font-size: 35px;
       font-weight: bold;
     }
@@ -165,7 +165,7 @@
 #read{
   display: none;
 
-  @media (min-width: $breakpoint) {
+  @media (min-width: $breakpointHD) {
     display: flex;
     justify-content: flex-end;
     margin: 0 100px 0 0;
@@ -198,7 +198,7 @@
   flex-wrap: wrap;
   padding: 20px 0;
 
-  @media (min-width: $breakpoint) {
+  @media (min-width: $breakpointHD) {
     display: flex;
     flex-direction: row;
     flex-grow: 1;
@@ -217,7 +217,7 @@
     height: auto;
     border-radius: 20px;
     
-    @media (min-width: $breakpoint) {
+    @media (min-width: $breakpointHD) {
       padding: 60px 0 0 0;
       width: 430px;
       height: auto;
@@ -232,7 +232,7 @@
     color: $ternarycolor;
     font-weight: bold;
 
-    @media (min-width: $breakpoint) {
+    @media (min-width: $breakpointHD) {
 
     }
   }
@@ -250,7 +250,7 @@
     font-size: 35px;
     font-weight: bold;
 
-    @media (min-width: $breakpoint) {
+    @media (min-width: $breakpointHD) {
       font-size: 70px;
       font-weight: bold;
       margin: 46.9px 60px;
@@ -262,7 +262,7 @@
     height: auto;
     border-radius: 20px;
 
-    @media (min-width: $breakpoint) {
+    @media (min-width: $breakpointHD) {
       padding: 60px 0 0 0;
       width: 430px;
       height: auto;
@@ -275,28 +275,45 @@
   background-color: #e4e4e4;
 
   h1{
-    margin: 100px 730px 0 730px;
+    display: flex;
+    margin: auto;
     padding: 60px 0 0 0;
-    text-align: center;
+    justify-content: center;
     color: $ternarycolor;
-    font-size: 50px;
+    font-size: 20px;
     font-weight: bold;
+
+    @media (min-width: $breakpointHD) {
+      font-size: 50px;
+    }
   }
 }
 
 .contact{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-content: center;
   flex-wrap: wrap;
-  margin: 0 400px;
   border: none;
+
+  @media (min-width: $breakpointHD) {
+    flex-direction: row;
+    margin: 0 200px;
+  }
+  @media (min-width: $breakpointFHD) {
+    margin: 0 400px;
+  }
 
   &__label{
     flex-grow: 1;
     background-color: #e4e4e4;
-    width: 30%;
-    margin: 20px 20px;
+    width: 90%;
+    margin: 20px 0;
+
+    @media (min-width: $breakpointHD) {
+      width: 30%;
+      margin: 20px 20px;
+    }
   }
 
   &__input{
