@@ -37,7 +37,7 @@
 }
 
 #start {
-  padding: 0;
+  padding: 0 0 20px 0;
   border-bottom: 2px solid red;
 }
 #start nav {
@@ -88,7 +88,7 @@
   height: 48px;
   padding-left: 0;
   font-size: 18px;
-  border-top: 1px solid #707070;
+  border-top: 1px solid #5a5a5a;
 }
 
 .nav-list {
@@ -209,22 +209,22 @@
     margin: 0 55% 0 0;
   }
   #meet-us-position h1 {
-    font-size: 77px;
+    font-size: 4vw;
     margin: 0 0 10px 0;
   }
   #meet-us-position p {
     display: block;
-    font-size: 25px;
+    font-size: 1.5vw;
     margin: 0 0 30px 0;
   }
   #meet-us-position .block {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 300px;
-    height: 70px;
-    color: white;
-    font-size: 25px;
+    width: 16.5vw;
+    height: 7.5vh;
+    color: #ffffff;
+    font-size: 1.5vw;
     font-weight: bold;
     border: none;
     border-radius: 15px;
@@ -243,7 +243,7 @@
   justify-content: space-around;
   margin: 0 60px;
   padding: 0;
-  color: #707070;
+  color: #5a5a5a;
 }
 @media (min-width: 768px) {
   #activities {
@@ -309,7 +309,7 @@
   justify-content: center;
   font-size: 20px;
   margin: 10px 0 0 0;
-  color: #707070;
+  color: #5a5a5a;
   font-weight: bold;
 }
 @media (min-width: 768px) {
@@ -387,7 +387,7 @@
   text-align: center;
   font-size: 20px;
   margin: 10px 0 0 0;
-  color: #707070;
+  color: #5a5a5a;
   font-weight: bold;
 }
 @media (min-width: 768px) {
@@ -405,7 +405,7 @@
   align-items: flex-start;
   margin: 46.9px 13%;
   padding: 0;
-  color: #707070;
+  color: #5a5a5a;
   font-size: 35px;
   font-weight: bold;
 }
@@ -438,7 +438,7 @@
   margin: auto;
   padding: 60px 0 0 0;
   justify-content: center;
-  color: #707070;
+  color: #5a5a5a;
   font-size: 20px;
   font-weight: bold;
 }
@@ -553,7 +553,7 @@
 }
 
 a {
-  color: #707070;
+  color: #5a5a5a;
 }
 @media (min-width: 768px) {
   a:hover {
@@ -639,6 +639,121 @@ a {
   .footer__social-media p {
     font-size: 12px;
   }
+}
+
+.main {
+  background-color: #e4e4e4;
+}
+
+.aerosol-team {
+  width: 100%;
+  height: auto;
+}
+.aerosol-team__container {
+  margin: 0 0 -4px 0;
+}
+
+.family-company {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 0;
+}
+@media (min-width: 768px) {
+  .family-company {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 14vw;
+    padding: 0 20px 80px 20px;
+  }
+}
+.family-company__description {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 50%;
+}
+@media (min-width: 768px) {
+  .family-company__description {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    margin: 100px 5vw 0 0;
+    color: #5a5a5a;
+  }
+}
+.family-company__description__header {
+  font-size: 5vw;
+  font-weight: bold;
+  font-family: "Flat Antique", "sans-serif";
+  color: #5a5a5a;
+  padding: 0 10vw 0 15vw;
+}
+.family-company__description__text {
+  font-size: 3vw;
+  font-weight: bold;
+  font-family: "Flat Antique", "sans-serif";
+  line-height: 1.5em;
+  color: #5a5a5a;
+  margin: 0 5vw;
+}
+@media (min-width: 768px) {
+  .family-company__description__text {
+    font-size: 1vw;
+  }
+}
+.family-company-picture {
+  display: flex;
+  margin: 3vh 0 0 0;
+  justify-content: center;
+  width: 50%;
+}
+@media (min-width: 768px) {
+  .family-company-picture {
+    margin: 80px 0 0 0;
+  }
+}
+.family-company-picture img {
+  width: 40vw;
+  height: 40vw;
+}
+@media (min-width: 768px) {
+  .family-company-picture img {
+    width: 30vw;
+    height: 30vw;
+  }
+}
+.family-company__reverse {
+  list-style: none;
+  display: flex;
+  flex-direction: row-reverse;
+  margin: 0 14vw;
+  padding: 0 20px 80px 20px;
+}
+.family-company__reverse__description {
+  margin: 100px 0 0 5vw;
+  color: #5a5a5a;
+}
+.family-company__reverse__description h1 {
+  font-size: 3.5vw;
+  font-weight: bold;
+  font-family: "Flat Antique", "sans-serif";
+}
+.family-company__reverse__description p {
+  font-size: 0.9vw;
+  font-family: "Flat Antique", "sans-serif";
+  line-height: 1.8em;
+}
+.family-company__reverse-picture {
+  margin: 80px 0 0 0;
+}
+.family-company__reverse-picture img {
+  width: 30vw;
+}
+
+.numbers {
+  width: 100%;
 }
 
 /*# sourceMappingURL=styles.css.map */

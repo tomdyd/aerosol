@@ -1,0 +1,124 @@
+@use 'config' as *;
+
+.main{
+  background-color: #e4e4e4;
+}
+
+.aerosol-team{
+  width: 100%;
+  height: auto;
+
+  &__container{
+    margin: 0 0 -4px 0;
+  }
+}
+
+.family-company{
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 0;
+  
+  @media (min-width: $breakpointHD) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 14vw;
+    padding: 0 20px 80px 20px;
+  }
+
+  &__description{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    //margin: 0 10vw;
+    width: 50%;
+
+    @media (min-width: $breakpointHD) {
+      display: flex;
+      flex-wrap: wrap;
+      width: 50%;
+      margin: 100px 5vw 0 0;
+      color: $ternarycolor;
+    }
+
+    &__header {
+      font-size: 5vw;
+      font-weight: bold;
+      font-family: "Flat Antique", "sans-serif";
+      color: $ternarycolor;
+      padding: 0 10vw 0 15vw;
+    }
+
+    &__text{
+      font-size: 3vw;
+      font-weight: bold;
+      font-family: "Flat Antique", "sans-serif";
+      line-height: 1.5em;
+      color: $ternarycolor;
+      margin: 0 5vw;
+      
+      @media (min-width: $breakpointHD) {
+        font-size: 1vw;
+      }
+    }
+  }
+
+  &-picture{
+    display: flex;
+    margin: 3vh 0 0 0;
+    justify-content: center;
+    width: 50%;
+
+    @media (min-width: $breakpointHD) {
+      margin: 80px 0 0 0;
+    }
+
+    img{
+      width: 40vw;
+      height: 40vw;
+
+      @media (min-width: $breakpointHD) {
+        width:30vw;
+        height: 30vw;
+      }
+    }
+  }
+
+  &__reverse{
+    list-style: none;
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 0 14vw;
+    padding: 0 20px 80px 20px;
+
+    &__description{
+      margin: 100px 0 0 5vw;
+      color: $ternarycolor;
+
+      h1 {
+        font-size: 3.5vw;
+        font-weight: bold;
+        font-family: "Flat Antique", "sans-serif";
+      }
+
+      p{
+        font-size: 0.9vw;
+        font-family: "Flat Antique", "sans-serif";
+        line-height: 1.8em;
+      }
+    }
+
+    &-picture{
+      margin: 80px 0 0 0;
+
+      img{
+        width: 30vw;
+      }
+    }
+  }
+}
+
+.numbers{
+  width: 100%
+}
