@@ -1,0 +1,28 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 100px;
+}
+
+.item:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+img {
+  width: 200px;
+  height: auto;
+}
+
+p {
+  margin-left: 10px;
+}
+
+/*# sourceMappingURL=about-us.css.map */

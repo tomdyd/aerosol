@@ -46,9 +46,9 @@
     color: #ffffff;
     font-size: 12px;
     font-weight: bold;
-    border: 2px solid red;
     border-radius: 15px;
-    background: red;
+    background: #dc0005;
+    text-decoration: none;
   }
 
   @media (min-width: $breakpointHD) {
@@ -75,9 +75,14 @@
       color: white;
       font-size: 25px;
       font-weight: bold;
-      border: 2px solid red;
+      border: none;
       border-radius: 15px;
       background: #dc0005;
+    }
+
+    a:hover{
+      background-color: #cc0005;
+      text-decoration: underline;
     }
   }
 }
@@ -130,7 +135,6 @@
     margin: 0 40px 10px 40px;
     padding: 0 0 20px 0;
   }
-
 
   li{
     margin: 0;
@@ -221,7 +225,7 @@
     
     @media (min-width: $breakpointHD) {
       padding: 60px 0 0 0;
-      width: 430px;
+      width: 300px;
       height: auto;
       border-radius: 20px;
     }
@@ -235,7 +239,8 @@
     font-weight: bold;
 
     @media (min-width: $breakpointHD) {
-
+      font-size: 35px;
+      font-weight: bold;
     }
   }
 }
@@ -265,8 +270,8 @@
     border-radius: 20px;
 
     @media (min-width: $breakpointHD) {
-      padding: 60px 0 0 0;
-      width: 430px;
+      padding: 0;
+      width: 300px;
       height: auto;
       border-radius: 20px;
     }
@@ -333,8 +338,11 @@
     }
 
     &-checkbox{
-      width: 40px;
-      height: auto;
+      height: 45px;
+
+      input{
+        width: 5px;
+      }
     }
   }
 }
@@ -346,9 +354,16 @@
   border: none;
 
   &__label{
+    display: flex;
+    flex-direction: row;
     width: 100%;
     margin: 0;
-    padding: 20px 0 0 0;
+    padding: 0;
+
+    p{
+      align-items: flex-start;
+      padding: 0 0 0 10px;
+    }
   }
 }
 
