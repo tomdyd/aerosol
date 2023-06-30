@@ -127,13 +127,14 @@
     flex-direction: row;
     justify-content: space-around;
     margin: 0 40px 10px 40px;
+    padding: 0 0 20px 0;
   }
 
 
   li{
-    padding: 0;
     margin: 0;
     list-style: none;
+    padding: 20px;
   }
 
   img{
@@ -348,4 +349,32 @@
     margin: 0;
     padding: 20px 0 0 0;
   }
+}
+
+.contact-submit{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: auto;
+
+  input{
+    display: block;
+    width: 221px;
+    height: 70px;
+    border: none;
+    border-radius: 20px;
+    background-color: #dc0005;
+    font-size: 20px;
+    color: #ffffff;
+
+
+  }
+  input:hover{
+    text-decoration: underline;
+    background-color: #C90A14;
+  }
+}
+
+.contact-padding{
+  padding: 0 0 20px 0;
 }

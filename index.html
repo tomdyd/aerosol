@@ -11,7 +11,7 @@
 
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/7.2.96/css/materialdesignicons.min.css" integrity="sha512-LX0YV/MWBEn2dwXCYgQHrpa9HJkwB+S+bnBpifSOTO1No27TqNMKYoAn6ff2FBh03THAzAiiCwQ+aPX+/Qt/Ow==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-  <link rel="stylesheet" href="src/sass/style.css">
+  <link rel="stylesheet" href="src/sass/styles.scss">
   <script type="module" src="/src/js/main.js"></script>
 </head>
 
@@ -23,7 +23,7 @@
     <button id="toggle-menu" class="mdi mdi-menu"></button>
     </div>
     <ul id="menu" class="nav-list">
-      <li class="dissappear"><a href="#"><img src="public/img/Aerosol_logo.svg" alt="logo" class="nav-list__logo"></a></li>
+      <li class="dissappear"><a href="#"><img src="public/img/Aerosol_" alt="logo" class="nav-list__logo"></a></li>
       <li><a href="#news">News</a> </li>
       <li><a href="#">Offer</a> </li>
       <li><a href="#">About us</a> </li>
@@ -35,7 +35,7 @@
 </header>
 <main>
   <section id="meet-us">
-    <img src="public/img/Home_Page.png" alt="cans" class="picture">
+    <img src="public/img/Home_Page1.svg" alt="cans" class="picture">
     <ul id="meet-us-position">
       <li><h1>Aerosol & Liquid Manufacturing</h1></li>
       <li><p>Odkryj doskonałość w każdej kropli. Dostarczamy produkty najwyższej próby, które spełniają Twoje najbardziej wymagające oczekiwania.</p></li>
@@ -77,7 +77,7 @@
 
   <section id="contact">
     <h1>Skontaktuj sie z nami!</h1>
-    <form>
+    <form class="contact-padding">
       <fieldset class="contact">
           <label for="company-name" class="contact__label"><input name="comapny-name" id="company-name" class="contact__input" type="text" placeholder="Nazwa firmy" required></label>
           <label for="email-address" class="contact__label"><input name="email-address" id="email-address" class="contact__input" type="email" placeholder="Adres email" required></label>
@@ -88,7 +88,9 @@
             </fieldset>
           </label>
           <label for="message" class="contact__label"><textarea name="message" id="message" class="contact__input contact__input-text_area" placeholder="Wiadomosc" required ></textarea></label>
+
       </fieldset>
+      <div class="contact-submit"><input type="submit" value="Submit" ></div>
     </form>
   </section>
 </main>
@@ -107,6 +109,6 @@
   </ul>
   <ul class="footer__social-media">
     <li><p>© Aerosol Service Sp. z o.o.</p></li>
-    <li><img src="public/img/facebook.svg" alt="facebook"><img src="public/img/linkedin.svg" alt="linkedin"></li>
+    <li><img src="public/img/Icon%20awesome-facebook-square.svg" alt="facebbok"><img src="public/img/Icon%20awesome-linkedin.svg" alt="linkedin"></li>
   </ul>
 </footer>
