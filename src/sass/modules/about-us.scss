@@ -2,6 +2,7 @@
 
 .main{
   background-color: #e4e4e4;
+  padding: 0 0 10vh 0;
 }
 
 .aerosol-team{
@@ -110,46 +111,140 @@
   flex-direction: column;
   justify-content: center;
   list-style: none;
+  margin: 7vh 0 0 0;
   padding: 0;
   font-family: "Flat Antique", "sans-serif";
   color: $ternarycolor;
 
+  @media (min-width: $breakpointHD) {
+    flex-direction: row;
+  }
+
   &-picture{
-    order: 1;
     display: flex;
     justify-content: center;
-    margin: 5vh 0 0 0;
+
+    @media (min-width: $breakpointHD) {
+      justify-content: flex-start;
+      margin: 5vh 0 0 14vw;
+      padding: 0 0 0 20px;
+    }
 
     img {
       width: 70vw;
+      
+      @media (min-width: $breakpointHD) {
+        justify-content: flex-start;
+        width: 30vw;
+        height: 30vw;
+      }
+    }
+  }
+
+  &-picture-right{
+    order: 2;
+    display: flex;
+    justify-content: center;
+
+    @media (min-width: $breakpointHD) {
+      justify-content: flex-start;
+      margin: 5vh 14vw 0 0;
+      padding: 0 20px 0 0;
+    }
+
+    img {
+      width: 70vw;
+
+      @media (min-width: $breakpointHD) {
+        justify-content: flex-start;
+        width: 30vw;
+        height: 30vw;
+      }
     }
   }
 
   &__header{
-    display: flex;
     order: 2;
-    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     font-size: 5vw;
     font-weight: bold;
-    
-    h1{
-      margin: 2vh 0 0 0;
+
+    @media (min-width: $breakpointHD) {
+      font-size: 2vw;
+      justify-content: flex-start;
+      margin: 10vh 0 0 0;
     }
 
+    h1{
+      display: flex;
+      margin: 2vh 0 3vh 0;
+      flex-wrap: wrap;
+      justify-content: center;
+      text-align: center;
+
+      @media (min-width: $breakpointHD) {
+        justify-content: flex-start;
+        margin: 0 5vw 3vh 5vw;
+        text-align: inherit;
+      }
+    }
+
+    p{
+      display: flex;
+      justify-content: center;
+      margin: 0 10vw;
+      font-size: 3vw;
+      line-height: 1.5em;
+
+      @media (min-width: $breakpointHD) {
+        font-size: 1vw;
+        margin: 0 15vw 0 5vw;
+      }
+    }
   }
 
-  &__text-mobile{
-    order: 3;
-    padding: 0 10vw;
-    margin: auto;
-    line-height: 1.5em;
+  &__header-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 5vw;
     font-weight: bold;
-  }
 
-  &__text-desktop{
-    display: none;
-  }
+    @media (min-width: $breakpointHD) {
+      font-size: 2vw;
+      justify-content: flex-start;
+      margin: 10vh 0 0 0;
+    }
 
+    h1{
+      display: flex;
+      margin: 2vh 0 3vh 0;
+      flex-wrap: wrap;
+      justify-content: center;
+      text-align: center;
+
+      @media (min-width: $breakpointHD) {
+        justify-content: flex-end;
+        margin: 0 5vw 3vh 15vw;
+        text-align: left;
+      }
+    }
+
+    p{
+      display: flex;
+      justify-content: center;
+      margin: 0 10vw;
+      font-size: 3vw;
+      line-height: 1.5em;
+
+      @media (min-width: $breakpointHD) {
+        font-size: 1vw;
+        margin: 0 5vw 0 15vw;
+      }
+    }
+  }
 }
 
 .numbers{
