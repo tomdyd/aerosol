@@ -659,13 +659,15 @@ a {
   flex-direction: row;
   flex-wrap: wrap;
   padding: 0;
+  font-family: "Flat Antique", "sans-serif";
+  color: #5a5a5a;
 }
 @media (min-width: 768px) {
   .family-company {
     flex-direction: row;
     flex-wrap: wrap;
     margin: 0 14vw;
-    padding: 0 20px 80px 20px;
+    padding: 0 0 15vh 20px;
   }
 }
 .family-company__description {
@@ -678,29 +680,48 @@ a {
   .family-company__description {
     display: flex;
     flex-wrap: wrap;
-    width: 50%;
+    width: 40%;
     margin: 100px 5vw 0 0;
-    color: #5a5a5a;
   }
 }
 .family-company__description__header {
   font-size: 5vw;
   font-weight: bold;
-  font-family: "Flat Antique", "sans-serif";
-  color: #5a5a5a;
   padding: 0 10vw 0 15vw;
 }
-.family-company__description__text {
+@media (min-width: 768px) {
+  .family-company__description__header {
+    font-size: 2vw;
+    padding: 0;
+  }
+}
+.family-company__description__text-mobile {
   font-size: 3vw;
   font-weight: bold;
-  font-family: "Flat Antique", "sans-serif";
   line-height: 1.5em;
-  color: #5a5a5a;
   margin: 0 5vw;
 }
 @media (min-width: 768px) {
-  .family-company__description__text {
+  .family-company__description__text-mobile {
+    display: none;
     font-size: 1vw;
+    width: 50%;
+    justify-content: flex-start;
+  }
+}
+.family-company__description__text-desktop {
+  display: none;
+  font-size: 3vw;
+  font-weight: bold;
+  line-height: 1.5em;
+  margin: 0 5vw;
+}
+@media (min-width: 768px) {
+  .family-company__description__text-desktop {
+    display: flex;
+    font-size: 1vw;
+    justify-content: flex-start;
+    margin: 0;
   }
 }
 .family-company-picture {
@@ -724,32 +745,44 @@ a {
     height: 30vw;
   }
 }
-.family-company__reverse {
-  list-style: none;
+
+.about-us-info {
   display: flex;
-  flex-direction: row-reverse;
-  margin: 0 14vw;
-  padding: 0 20px 80px 20px;
-}
-.family-company__reverse__description {
-  margin: 100px 0 0 5vw;
+  flex-direction: column;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  font-family: "Flat Antique", "sans-serif";
   color: #5a5a5a;
 }
-.family-company__reverse__description h1 {
-  font-size: 3.5vw;
+.about-us-info-picture {
+  order: 1;
+  display: flex;
+  justify-content: center;
+  margin: 5vh 0 0 0;
+}
+.about-us-info-picture img {
+  width: 70vw;
+}
+.about-us-info__header {
+  display: flex;
+  order: 2;
+  margin: auto;
+  font-size: 5vw;
   font-weight: bold;
-  font-family: "Flat Antique", "sans-serif";
 }
-.family-company__reverse__description p {
-  font-size: 0.9vw;
-  font-family: "Flat Antique", "sans-serif";
-  line-height: 1.8em;
+.about-us-info__header h1 {
+  margin: 2vh 0 0 0;
 }
-.family-company__reverse-picture {
-  margin: 80px 0 0 0;
+.about-us-info__text-mobile {
+  order: 3;
+  padding: 0 10vw;
+  margin: auto;
+  line-height: 1.5em;
+  font-weight: bold;
 }
-.family-company__reverse-picture img {
-  width: 30vw;
+.about-us-info__text-desktop {
+  display: none;
 }
 
 .numbers {

@@ -19,47 +19,66 @@
   flex-direction: row;
   flex-wrap: wrap;
   padding: 0;
-  
+  font-family: "Flat Antique", "sans-serif";
+  color: $ternarycolor;
+
   @media (min-width: $breakpointHD) {
     flex-direction: row;
     flex-wrap: wrap;
     margin: 0 14vw;
-    padding: 0 20px 80px 20px;
+    padding: 0 0 15vh 20px;
   }
 
   &__description{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    //margin: 0 10vw;
     width: 50%;
 
     @media (min-width: $breakpointHD) {
       display: flex;
       flex-wrap: wrap;
-      width: 50%;
+      width: 40%;
       margin: 100px 5vw 0 0;
-      color: $ternarycolor;
     }
 
     &__header {
       font-size: 5vw;
       font-weight: bold;
-      font-family: "Flat Antique", "sans-serif";
-      color: $ternarycolor;
       padding: 0 10vw 0 15vw;
+
+      @media (min-width: $breakpointHD) {
+        font-size: 2vw;
+        padding: 0;
+      }
     }
 
-    &__text{
+    &__text-mobile{
       font-size: 3vw;
       font-weight: bold;
-      font-family: "Flat Antique", "sans-serif";
       line-height: 1.5em;
-      color: $ternarycolor;
       margin: 0 5vw;
-      
+
       @media (min-width: $breakpointHD) {
+        display: none;
         font-size: 1vw;
+        width: 50%;
+        justify-content: flex-start;
+      }
+    }
+
+    &__text-desktop{
+      display: none;
+      font-size: 3vw;
+      font-weight: bold;
+      line-height: 1.5em;
+      margin: 0 5vw;
+
+      @media (min-width: $breakpointHD) {
+        display: flex;
+        font-size: 1vw;
+        justify-content: flex-start;
+        margin: 0;
       }
     }
   }
@@ -84,39 +103,53 @@
       }
     }
   }
+}
 
-  &__reverse{
-    list-style: none;
+.about-us-info{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  font-family: "Flat Antique", "sans-serif";
+  color: $ternarycolor;
+
+  &-picture{
+    order: 1;
     display: flex;
-    flex-direction: row-reverse;
-    margin: 0 14vw;
-    padding: 0 20px 80px 20px;
+    justify-content: center;
+    margin: 5vh 0 0 0;
 
-    &__description{
-      margin: 100px 0 0 5vw;
-      color: $ternarycolor;
-
-      h1 {
-        font-size: 3.5vw;
-        font-weight: bold;
-        font-family: "Flat Antique", "sans-serif";
-      }
-
-      p{
-        font-size: 0.9vw;
-        font-family: "Flat Antique", "sans-serif";
-        line-height: 1.8em;
-      }
-    }
-
-    &-picture{
-      margin: 80px 0 0 0;
-
-      img{
-        width: 30vw;
-      }
+    img {
+      width: 70vw;
     }
   }
+
+  &__header{
+    display: flex;
+    order: 2;
+    margin: auto;
+    font-size: 5vw;
+    font-weight: bold;
+    
+    h1{
+      margin: 2vh 0 0 0;
+    }
+
+  }
+
+  &__text-mobile{
+    order: 3;
+    padding: 0 10vw;
+    margin: auto;
+    line-height: 1.5em;
+    font-weight: bold;
+  }
+
+  &__text-desktop{
+    display: none;
+  }
+
 }
 
 .numbers{
