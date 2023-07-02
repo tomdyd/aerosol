@@ -7,8 +7,10 @@
 
 .aerosol-team{
   width: 100vw;
-  padding: 0 0 100px 0;
-
+  
+  @media (min-width: $breakpointHD) {
+    padding: 0 0 100px 0;
+  }
 
   &__container{
     margin: 0 0 -4px 0;

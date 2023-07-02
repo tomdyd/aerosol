@@ -16,6 +16,16 @@
 .languages a:hover {
   text-decoration: underline;
 }
+.languages__europe-flag {
+  display: flex;
+  width: 8vw;
+  padding: 1vh 0 1vh 0;
+}
+@media (min-width: 768px) {
+  .languages__europe-flag {
+    display: none;
+  }
+}
 
 .logo {
   width: 200px;
@@ -106,7 +116,7 @@
   }
 }
 .nav-list a {
-  font-size: 20px;
+  font-size: 1.1vw;
 }
 .nav-list__logo {
   display: none;
@@ -115,7 +125,7 @@
   .nav-list__logo {
     display: flex;
     justify-content: center;
-    width: 200px;
+    width: 15vw;
     height: auto;
     margin: auto;
   }
@@ -126,7 +136,7 @@
 @media (min-width: 768px) {
   .nav-list__flag {
     display: flex;
-    width: 60px;
+    width: 3vw;
     height: auto;
     margin: auto;
   }
@@ -157,7 +167,7 @@
 }
 
 .picture {
-  width: 100%;
+  width: 100vw;
   height: auto;
 }
 
@@ -296,13 +306,13 @@
   padding: 20px;
 }
 .picture-section img {
-  width: 150px;
+  width: 30vw;
   height: auto;
   border-radius: 20px;
 }
 @media (min-width: 768px) {
   .picture-section img {
-    width: 300px;
+    width: 16.5vw;
     height: auto;
   }
 }
@@ -316,7 +326,7 @@
 }
 @media (min-width: 768px) {
   .picture-section p {
-    font-size: 35px;
+    font-size: 2vw;
     font-weight: bold;
   }
 }
@@ -383,21 +393,21 @@
   padding: 0;
 }
 #products-list img {
-  width: 200px;
+  width: 40vw;
   height: auto;
   border-radius: 20px;
 }
 @media (min-width: 768px) {
   #products-list img {
     padding: 60px 0 0 0;
-    width: 300px;
+    width: 16.5vw;
     height: auto;
     border-radius: 20px;
   }
 }
 #products-list p {
   text-align: center;
-  font-size: 20px;
+  font-size: 6vw;
   margin: 10px 0 0 0;
   color: #5a5a5a;
   font-weight: bold;
@@ -405,7 +415,7 @@
 }
 @media (min-width: 768px) {
   #products-list p {
-    font-size: 35px;
+    font-size: 2vw;
     font-weight: bold;
   }
 }
@@ -416,7 +426,7 @@
 #news h1 {
   display: flex;
   align-items: flex-start;
-  margin: 46.9px 13%;
+  justify-content: center;
   padding: 0;
   color: #5a5a5a;
   font-size: 35px;
@@ -426,18 +436,19 @@
   #news h1 {
     font-size: 70px;
     font-weight: bold;
-    margin: 46.9px 60px;
+    margin: 46.9px 13%;
+    justify-content: normal;
   }
 }
 #news img {
-  width: 200px;
+  width: 40vw;
   height: auto;
   border-radius: 20px;
 }
 @media (min-width: 768px) {
   #news img {
     padding: 0;
-    width: 300px;
+    width: 16.5vw;
     height: auto;
     border-radius: 20px;
   }
@@ -661,7 +672,11 @@ a {
 
 .aerosol-team {
   width: 100vw;
-  padding: 0 0 100px 0;
+}
+@media (min-width: 768px) {
+  .aerosol-team {
+    padding: 0 0 100px 0;
+  }
 }
 .aerosol-team__container {
   margin: 0 0 -4px 0;
@@ -940,9 +955,16 @@ a {
   }
 }
 .innovations__header {
-  font-size: 3.5vw;
-  margin: 0 0 0 15vw;
-  padding: 60px 0 0 0;
+  font-size: 8vw;
+  margin: 0 0 0 10vw;
+  padding: 0;
+}
+@media (min-width: 768px) {
+  .innovations__header {
+    font-size: 3.5vw;
+    padding: 60px 0 0 0;
+    margin: 0 0 0 15vw;
+  }
 }
 
 .areas-picture {
@@ -1696,7 +1718,7 @@ a {
 .order__benefits__list-text {
   display: flex;
   justify-content: center;
-  font-size: 4vw;
+  font-size: 6vw;
   width: 33vw;
   text-align: center;
   padding: 0 0 30px 0;

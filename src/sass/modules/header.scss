@@ -17,6 +17,16 @@
   a:hover{
     text-decoration: underline;
   }
+
+  &__europe-flag{
+    display: flex;
+    width: 8vw;
+    padding: 1vh 0 1vh 0;
+
+    @media (min-width: $breakpointHD) {
+      display: none;
+    }
+  }
 }
 
 .logo{
@@ -109,7 +119,7 @@
   }
 
   a{
-    font-size: 20px;
+    font-size: 1.1vw;
   }
 
   &__logo{
@@ -118,7 +128,7 @@
     @media (min-width: $breakpointHD) {
       display: flex;
       justify-content: center;
-      width: 200px;
+      width: 15vw;
       height: auto;
       margin: auto;
     }
@@ -129,7 +139,7 @@
 
     @media (min-width: $breakpointHD) {
       display: flex;
-      width: 60px;
+      width: 3vw;
       height: auto;
       margin: auto;
     }
