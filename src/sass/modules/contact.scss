@@ -1,0 +1,53 @@
+@use 'config' as *;
+
+.contact-picture{
+  width: 100vw;
+}
+
+.departments{
+  background-color: #e4e4e4;
+  color: $ternarycolor;
+  padding: 0 0 30px 0;
+
+  &__contact{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    list-style: none;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+    
+    @media (min-width: $breakpointHD) {
+      flex-direction: row;
+      justify-content: space-around;
+      margin: 0 30vh;
+      padding: 13vh 0;
+      text-align: left;
+    }
+
+    &__header{
+      margin: 20px 0 10px 0;
+
+      @media (min-width: $breakpointHD) {
+        font-size: 2vw;
+      }
+    }
+
+    &__text{
+      margin: 0;
+      padding: 0;
+      font-size: 2.3vh;
+
+      @media (min-width: $breakpointHD) {
+        font-size: 1vw;
+      }
+
+      &__section{
+        padding: 0;
+        margin: 15px 0 0 0;
+      }
+    }
+  }
+}
