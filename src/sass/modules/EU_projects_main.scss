@@ -1,0 +1,32 @@
+@use 'config' as *;
+
+.EU_projects_main {
+  background-color: #e4e4e4;
+  color: $ternarycolor;
+  padding: 0 0 30px 0;
+
+  &__picture{
+    width: 100vw;
+    margin: 0 0 20px 0;
+  }
+}
+
+.eu_projects{
+  margin: 2vh 10vw;
+  padding: 0;
+  list-style: none;
+  line-height: 1.7em;
+
+  @media (min-width: $breakpointHD) {
+    margin: 5vh 10vw;
+    font-size: 0.8vw;
+  }
+
+  &__header{
+    margin: 0;
+    font-size: 4vw;
+    @media (min-width: $breakpointHD) {
+      font-size: 0.8vw;
+    }
+  }
+}
