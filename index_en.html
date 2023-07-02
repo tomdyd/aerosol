@@ -11,7 +11,7 @@
 
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/7.2.96/css/materialdesignicons.min.css" integrity="sha512-LX0YV/MWBEn2dwXCYgQHrpa9HJkwB+S+bnBpifSOTO1No27TqNMKYoAn6ff2FBh03THAzAiiCwQ+aPX+/Qt/Ow==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-  <link rel="stylesheet" href="src/sass/style.css">
+  <link rel="stylesheet" href="src/sass/styles.scss">
   <script type="module" src="/src/js/main.js"></script>
 </head>
 
@@ -42,10 +42,10 @@
 <main>
   <section id="meet-us">
     <img src="public/img/Home_Page.png" alt="cans" class="picture">
-    <ul id="meet-us-position">
+    <ul id="meet-us-position" class="meet-us">
       <li><h1>Aerosol & Liquid Manufacturing</h1></li>
       <li><p>Discover excellence in every drop. We deliver top-notch products that meet your most demanding expectations.</p></li>
-      <li><a class="block" href="about-us_eng.html">Get to know our brand!</a></li>
+      <li><a class="block" href="about-us_eng.html"><p>Get to know our brand!</p></a></li>
     </ul>
   </section>
 
@@ -89,9 +89,8 @@
           <label for="email-address" class="contact__label"><input name="email-address" id="email-address" class="contact__input" type="email" placeholder="Email address" required></label>
           <label for="phone-number" class="contact__label"><input name="phone-number" id="phone-number" class="contact__input" type="tel" placeholder="Phone number" required>
             <fieldset class="contact-checkbox">
-              <label for="personal-data" class="contact-checkbox__label"><input name="personal-data" id="personal-data" class="contact__input-checkbox" type="checkbox" value=1 required>I consent to the storage of the provided personal data and its processing for the purpose of follow-up contact*.</label>
-              <label for="private-policy" class="contact-checkbox__label"><input name="private-policy" id="private-policy" class="contact__input-checkbox" type="checkbox" value=2 required>
-                I consent to the storage and processing of personal data for marketing purposes, in accordance with our Privacy Policy.</label>
+              <label for="personal-data" class="contact-checkbox__label"><input name="personal-data" id="personal-data" class="contact__input-checkbox" type="checkbox" value=1 required><p>I consent to the storage of the provided personal data and its processing for the purpose of follow-up contact*.</p></label>
+              <label for="private-policy" class="contact-checkbox__label"><input name="private-policy" id="private-policy" class="contact__input-checkbox" type="checkbox" value=2 required><p>I consent to the storage and processing of personal data for marketing purposes, in accordance with our<a href="#"> Privacy Policy</a>.</p></label>
             </fieldset>
           </label>
           <label for="message" class="contact__label"><textarea name="message" id="message" class="contact__input contact__input-text_area" placeholder="Message" required ></textarea></label>
