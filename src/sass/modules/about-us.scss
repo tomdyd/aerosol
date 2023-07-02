@@ -6,8 +6,9 @@
 }
 
 .aerosol-team{
-  width: 100%;
-  height: auto;
+  width: 100vw;
+  padding: 0 0 100px 0;
+
 
   &__container{
     margin: 0 0 -4px 0;
@@ -28,7 +29,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     padding: 0 0 15vh 20px;
-    margin: 6vh 5vw 0 14vw;
+    margin: 0 5vw 0 14vw;
   }
 
   &__description{

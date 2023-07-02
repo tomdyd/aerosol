@@ -660,8 +660,8 @@ a {
 }
 
 .aerosol-team {
-  width: 100%;
-  height: auto;
+  width: 100vw;
+  padding: 0 0 100px 0;
 }
 .aerosol-team__container {
   margin: 0 0 -4px 0;
@@ -682,7 +682,7 @@ a {
     flex-direction: row;
     flex-wrap: wrap;
     padding: 0 0 15vh 20px;
-    margin: 6vh 5vw 0 14vw;
+    margin: 0 5vw 0 14vw;
   }
 }
 .family-company__description {
@@ -1528,6 +1528,185 @@ a {
 @media (min-width: 768px) {
   .eu_projects__header {
     font-size: 0.8vw;
+  }
+}
+
+.carrier-main {
+  background-color: #e4e4e4;
+}
+
+.carrier-picture {
+  width: 100vw;
+  background-color: #e4e4e4;
+}
+@media (min-width: 768px) {
+  .carrier-picture {
+    padding: 0 0 100px 0;
+  }
+}
+
+.order {
+  display: flex;
+  flex-direction: column;
+}
+.order__container {
+  width: 100vw;
+}
+@media (min-width: 768px) {
+  .order__container {
+    width: 40vw;
+  }
+}
+.order__job-offers {
+  order: 1;
+  padding: 30px 0 30px 0;
+}
+@media (min-width: 768px) {
+  .order__job-offers {
+    order: 2;
+    background-color: #e4e4e4;
+    padding: 60px 0 60px 0;
+    display: flex;
+    flex-direction: row;
+  }
+}
+.order__job-offers__header {
+  text-align: center;
+  color: #5a5a5a;
+  margin: 0 25vw 3vh 25vw;
+  font-size: 8vw;
+  font-weight: bold;
+}
+@media (min-width: 768px) {
+  .order__job-offers__header {
+    font-size: 3vw;
+    text-align: left;
+    margin: 0 5vw 0 15vw;
+    font-weight: bold;
+  }
+}
+.order__job-offers__list {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  list-style: none;
+}
+@media (min-width: 768px) {
+  .order__job-offers__list {
+    margin: 10vh 0 0 15vw;
+    padding: 0;
+  }
+}
+.order__job-offers__list-item {
+  display: flex;
+}
+@media (min-width: 768px) {
+  .order__job-offers__list-item {
+    width: 50vw;
+  }
+}
+.order__job-offers__list-item a:hover {
+  text-decoration: underline;
+}
+.order__job-offers__list-item-text {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  text-decoration: none;
+  margin: 0 0 0 20px;
+  color: #5a5a5a;
+  font-size: 5vw;
+}
+@media (min-width: 768px) {
+  .order__job-offers__list-item-text {
+    font-size: 2.5vw;
+  }
+}
+.order__job-offers__list-employee {
+  display: none;
+}
+@media (min-width: 768px) {
+  .order__job-offers__list-employee {
+    display: flex;
+    margin: 13vh 0 0 17vw;
+    width: 32vw;
+  }
+}
+.order__job-offers__picture {
+  width: 7vw;
+  border-radius: 50%;
+}
+@media (min-width: 768px) {
+  .order__job-offers__picture {
+    width: 3vw;
+  }
+}
+.order__benefits {
+  order: 2;
+  background-color: #e4e4e4;
+}
+@media (min-width: 768px) {
+  .order__benefits {
+    order: 1;
+    background-color: #ffffff;
+  }
+}
+.order__benefits__header {
+  margin: 0 0 40px 0;
+  padding: 20px 0 0 0;
+  text-align: center;
+  color: #5a5a5a;
+}
+@media (min-width: 768px) {
+  .order__benefits__header {
+    font-size: 3vw;
+  }
+}
+.order__benefits-picture {
+  border-radius: 50%;
+  width: 33vw;
+}
+@media (min-width: 768px) {
+  .order__benefits-picture {
+    width: 7vw;
+  }
+}
+.order__benefits__list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  list-style: none;
+  padding: 0;
+}
+@media (min-width: 768px) {
+  .order__benefits__list {
+    flex-direction: row;
+    justify-content: space-around;
+    margin: auto;
+  }
+  .order__benefits__list li {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
+    width: 10vw;
+  }
+}
+.order__benefits__list-text {
+  display: flex;
+  justify-content: center;
+  font-size: 4vw;
+  width: 33vw;
+  text-align: center;
+  padding: 0 0 30px 0;
+  color: #5a5a5a;
+  font-weight: bold;
+}
+@media (min-width: 768px) {
+  .order__benefits__list-text {
+    font-size: 1.1vw;
+    width: 7vw;
   }
 }
 
