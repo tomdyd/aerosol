@@ -12,6 +12,7 @@
     "vite": "^4.3.9"
   },
   "dependencies": {
+    "node-sass": "^9.0.0",
     "normalize.css": "^8.0.1",
     "pnpm": "^8.6.5",
     "sass": "^1.63.6"
