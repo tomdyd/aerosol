@@ -35,7 +35,6 @@
   top: 23%;
   margin: 0 33% 0 0;
   padding: 0;
-  font-weight: normal;
 
   h1{
     font-size: 25px;
@@ -109,11 +108,9 @@
 
   h1 {
     font-size: 35px;
-    font-weight: bold;
 
     @media (min-width: $breakpointHD) {
       font-size: 70px;
-      font-weight: bold;
       margin: 46.9px 60px;
     }
   }
@@ -185,11 +182,13 @@
 }
 
 #marketing-video{
+  z-index: 1;
   display: flex;
   width: 100%;
   height: auto;
   padding: 20px 0 0 0;
   margin: 0;
+  position: relative;
 }
 
 .section-color{

@@ -18,10 +18,10 @@
       display: flex;
 
       img{
-        width: 100px;
+        width: 10vw;
 
         @media (min-width: $breakpointHD) {
-          width: 200px;
+          width: 5.5vw;
         }
       }
     }
