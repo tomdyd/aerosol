@@ -19,14 +19,14 @@
 
   @media (min-width: $breakpointHD) {
     margin: 5vh 10vw;
-    font-size: 0.8vw;
+    font-size: 1.1vw;
   }
 
   &__header{
     margin: 0;
     font-size: 4vw;
     @media (min-width: $breakpointHD) {
-      font-size: 0.8vw;
+      font-size: 1.1vw;
     }
   }
 }
