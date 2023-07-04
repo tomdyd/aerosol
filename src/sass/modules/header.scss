@@ -158,6 +158,15 @@
     display: flex;
     justify-content: center;
   }
+
+  &__desktop{
+    display: flex;
+    justify-content: center;
+
+    @media(min-width: $breakpointHD){
+      display: none;
+    }
+  }
 }
 
 .nav-list li {

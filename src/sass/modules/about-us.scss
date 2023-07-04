@@ -51,10 +51,11 @@
       font-weight: bold;
       padding: 0 10vw 0 15vw;
       margin: 10vh 0 0 0;
-
+      
       @media (min-width: $breakpointHD) {
         font-size: 1.8vw;
         padding: 0;
+        height: 0;
       }
     }
 
