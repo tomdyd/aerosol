@@ -37,7 +37,7 @@
   padding: 0;
 
   h1{
-    font-size: 25px;
+    font-size: 5vw;
   }
 
   p{
@@ -48,14 +48,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 150px;
+    width: 21vw;
     height: 35px;
     color: #ffffff;
-    font-size: 12px;
+    font-size: 2vw;
     font-weight: bold;
     border-radius: 15px;
     background: #dc0005;
     text-decoration: none;
+    text-align: center;
   }
 
   @media (min-width: $breakpointHD) {

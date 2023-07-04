@@ -50,6 +50,7 @@
 #start {
   padding: 0 0 20px 0;
   border-bottom: 2px solid red;
+  width: 100%;
 
   nav{
     display: flex;
@@ -63,7 +64,7 @@
   }
 }
 
-#start nav button {
+#start nav i {
   border: 0;
   margin: 0 10px 10px 0;
   padding: 0;
@@ -71,6 +72,10 @@
   height: 48px;
   font-size: 50px;
   background-color: #ffffff;
+  
+  @media (min-width: $breakpointHD) {
+    display: none;
+  }
 }
 
 @media (min-width: $breakpointHD) {
