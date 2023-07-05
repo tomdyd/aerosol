@@ -370,7 +370,7 @@
   flex-direction: column;
   justify-content: center;
   font-size: 5vw;
-  font-weight: bold;
+  font-weight: normal;
 }
 @media (min-width: 768px) {
   .areas-of-activity__header {
@@ -413,7 +413,7 @@
   flex-direction: column;
   justify-content: center;
   font-size: 5vw;
-  font-weight: bold;
+  font-weight: normal;
 }
 @media (min-width: 768px) {
   .areas-of-activity__header-left {
@@ -461,6 +461,7 @@
 .field {
   list-style: none;
   padding: 0;
+  height: 2vw;
 }
 .field li {
   display: flex;
@@ -491,7 +492,7 @@
 }
 @media (min-width: 768px) {
   .field__button-left p {
-    font-size: 2vw;
+    font-size: 1vw;
   }
 }
 .field__button-right {
@@ -519,7 +520,7 @@
 }
 @media (min-width: 768px) {
   .field__button-right p {
-    font-size: 2vw;
+    font-size: 1vw;
   }
 }
 
@@ -578,7 +579,7 @@
 
 :root {
   color: #000000;
-  font-family: "Futura", sans-serif;
+  font-family: "Futura PT", sans-serif;
   box-sizing: border-box;
   font-size: 87.5%;
 }
@@ -1057,7 +1058,13 @@ body {
 .footer {
   display: flex;
   justify-content: space-between;
-  padding: 20px;
+  margin: 0 4vw;
+}
+@media (min-width: 768px) {
+  .footer {
+    margin: 0 6vw;
+    padding: 20px;
+  }
 }
 .footer li {
   list-style: none;
@@ -1084,7 +1091,7 @@ body {
   padding: 0;
 }
 .footer__company-data ul {
-  margin: 0 10px 0 0;
+  margin: 0 20px 0 0;
 }
 .footer__description {
   display: flex;
@@ -1092,14 +1099,22 @@ body {
   justify-content: center;
   flex-grow: 1;
   padding: 0;
+  font-weight: normal;
+  text-decoration: none;
+  color: #707070;
+}
+@media (min-width: 768px) {
+  .footer__description {
+    line-height: 1vw;
+  }
 }
 .footer__description p {
   margin: 0;
-  font-size: 6px;
+  font-size: 2vw;
 }
 @media (min-width: 768px) {
   .footer__description p {
-    font-size: 12px;
+    font-size: 0.7vw;
   }
 }
 .footer__social-media {
@@ -1118,11 +1133,11 @@ body {
 }
 .footer__social-media li img {
   width: 20px;
-  margin: 0 5px 0 0;
+  margin: 0 1vw 0 0;
 }
 @media (min-width: 768px) {
   .footer__social-media li img {
-    width: 50px;
+    width: 1.7vw;
   }
 }
 .footer__social-media p {
@@ -1442,9 +1457,9 @@ body {
 #activities {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-around;
-  margin: 0 60px;
+  margin: 0 0;
   padding: 0;
   color: #5a5a5a;
 }
@@ -1452,15 +1467,18 @@ body {
   #activities {
     display: flex;
     justify-content: flex-start;
+    margin: 0 0 0 2.5vw;
   }
 }
 #activities h1 {
-  font-size: 35px;
+  font-size: 5vw;
+  width: 25%;
 }
 @media (min-width: 768px) {
   #activities h1 {
-    font-size: 70px;
+    font-size: 3vw;
     margin: 46.9px 60px;
+    width: 100%;
   }
 }
 #activities p {
@@ -1713,6 +1731,7 @@ body {
 .contact__input-text_area {
   padding: 120px 10px;
   height: 250px;
+  font-family: "Futura PT", "sans-serif";
 }
 .contact__input-checkbox {
   height: 45px;
@@ -1733,6 +1752,7 @@ body {
   width: 100%;
   margin: 0;
   padding: 0;
+  font-family: "Futura", sans-serif;
 }
 .contact-checkbox__label p {
   align-items: flex-start;
