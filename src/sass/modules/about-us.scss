@@ -6,7 +6,7 @@
 }
 
 .aerosol-team{
-  width: 100vw;
+  width: 100%;
   
   @media (min-width: $breakpointHD) {
     padding: 0 0 100px 0;
@@ -30,7 +30,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     padding: 0 0 15vh 20px;
-    margin: 0 5vw 0 14vw;
+    margin: 0 5vw 0 8vw;
   }
 
   &__description{
@@ -47,10 +47,11 @@
     }
 
     &__header {
-      font-size: 4vw;
+      font-size: 3.5vw;
       font-weight: bold;
-      padding: 0 10vw 0 15vw;
-      margin: 10vh 0 0 0;
+      padding: 0 0 0 0;
+      margin: 8vh 0 0 5vw;
+      width: 40%;
       
       @media (min-width: $breakpointHD) {
         font-size: 1.8vw;
@@ -61,7 +62,7 @@
 
     &__text-mobile{
       font-size: 3vw;
-      font-weight: bold;
+      font-weight: normal;
       line-height: 1.5em;
       margin: 0 5vw 0 5vw;
 
@@ -76,7 +77,7 @@
     &__text-desktop{
       display: none;
       font-size: 3vw;
-      font-weight: bold;
+      font-weight: normal;
       line-height: 1.5em;
       margin: 0 5vw 0 5vw;
 
@@ -100,7 +101,7 @@
     }
 
     img{
-      margin: 5vh 0 0 0;
+      margin: 2vh 0 0 0;
       width: 40vw;
       height: 40vw;
 

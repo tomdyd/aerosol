@@ -4,7 +4,7 @@
 }
 
 .aerosol-team {
-  width: 100vw;
+  width: 100%;
 }
 @media (min-width: 768px) {
   .aerosol-team {
@@ -29,7 +29,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     padding: 0 0 15vh 20px;
-    margin: 0 5vw 0 14vw;
+    margin: 0 5vw 0 8vw;
   }
 }
 .family-company__description {
@@ -47,10 +47,11 @@
   }
 }
 .family-company__description__header {
-  font-size: 4vw;
+  font-size: 3.5vw;
   font-weight: bold;
-  padding: 0 10vw 0 15vw;
-  margin: 10vh 0 0 0;
+  padding: 0 0 0 0;
+  margin: 8vh 0 0 5vw;
+  width: 40%;
 }
 @media (min-width: 768px) {
   .family-company__description__header {
@@ -61,7 +62,7 @@
 }
 .family-company__description__text-mobile {
   font-size: 3vw;
-  font-weight: bold;
+  font-weight: normal;
   line-height: 1.5em;
   margin: 0 5vw 0 5vw;
 }
@@ -76,7 +77,7 @@
 .family-company__description__text-desktop {
   display: none;
   font-size: 3vw;
-  font-weight: bold;
+  font-weight: normal;
   line-height: 1.5em;
   margin: 0 5vw 0 5vw;
 }
@@ -100,7 +101,7 @@
   }
 }
 .family-company-picture img {
-  margin: 5vh 0 0 0;
+  margin: 2vh 0 0 0;
   width: 40vw;
   height: 40vw;
 }
@@ -602,17 +603,17 @@ body {
   padding: 0;
 }
 
-.carrier-main {
+.carrier {
   background-color: #e4e4e4;
 }
 
 .carrier-picture {
-  width: 100vw;
-  background-color: #e4e4e4;
+  width: 100%;
 }
 @media (min-width: 768px) {
   .carrier-picture {
     padding: 0 0 100px 0;
+    background-color: #ffffff;
   }
 }
 
@@ -784,7 +785,7 @@ body {
 }
 
 .contact-picture {
-  width: 100vw;
+  width: 100%;
 }
 
 .departments {
@@ -1029,7 +1030,7 @@ body {
   padding: 0 0 30px 0;
 }
 .EU_projects_main__picture {
-  width: 100vw;
+  width: 100%;
   margin: 0 0 20px 0;
 }
 
@@ -1346,7 +1347,7 @@ body {
   }
 }
 .privacy-policy__picture {
-  width: 100vw;
+  width: 100%;
   margin: 0 0 40px 0;
 }
 .privacy-policy__header {
@@ -1372,7 +1373,7 @@ body {
 }
 
 .picture {
-  width: 100vw;
+  width: 100%;
   height: auto;
 }
 
@@ -1385,7 +1386,6 @@ body {
 .meet-us li {
   list-style: none;
   padding: 0;
-  margin: 0;
 }
 .meet-us li p {
   font-weight: normal;

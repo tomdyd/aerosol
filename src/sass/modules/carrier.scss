@@ -1,17 +1,18 @@
 @use 'config' as *;
 
-.carrier-main{
+.carrier{
   background-color: #e4e4e4;
 }
 
 .carrier{
 
   &-picture{
-    width: 100vw;
-    background-color: #e4e4e4;
+    width: 100%;
+
     
     @media (min-width: $breakpointHD) {
       padding: 0 0 100px 0;
+      background-color: #ffffff;
     }
   }
 }
