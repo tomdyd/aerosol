@@ -5,6 +5,8 @@
   font-family: $font;
   box-sizing: border-box;
   font-size: 87.5%;
+  font-feature-settings: $font-feature;
+  font-weight: $font-weight;
 }
 
 * {

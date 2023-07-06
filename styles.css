@@ -580,9 +580,11 @@
 
 :root {
   color: #000000;
-  font-family: "Futura PT", sans-serif;
+  font-family: "Jost", sans-serif;
   box-sizing: border-box;
   font-size: 87.5%;
+  font-feature-settings: "ss01" 1, "ss03" 1;
+  font-weight: 300;
 }
 
 * {
