@@ -3,7 +3,7 @@
 .footer {
   display: flex;
   justify-content: space-between;
-
+  text-decoration: none;
   margin: 0 4vw;
 
   @media (min-width: $breakpointHD) {
@@ -50,8 +50,7 @@
     flex-grow: 1;
     padding: 0;
     font-weight: normal;
-    text-decoration: none;
-    color: #707070;
+    color: $ternarycolor;
 
     @media (min-width: $breakpointHD) {
       line-height: 1vw;
@@ -59,7 +58,7 @@
 
     p{
       margin: 0;
-      font-size: 2vw;;
+      font-size: 1.1vw;;
 
       @media (min-width: $breakpointHD) {
         font-size: 0.7vw;
@@ -91,7 +90,8 @@
     }
 
     p{
-      font-size: 6px;
+      font-size: 1.1vw;
+      color: $ternarycolor;
 
       @media (min-width: $breakpointHD) {
         font-size: 12px;

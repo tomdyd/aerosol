@@ -6,11 +6,6 @@
   box-sizing: border-box;
   font-size: 87.5%;
   font-feature-settings: $font-feature;
-  font-weight: $font-weight;
-}
-
-* {
-  box-sizing: inherit;
 }
 
 a {
@@ -21,6 +16,10 @@ a {
       text-decoration: none;
     }
   }
+}
+
+* {
+  box-sizing: inherit;
 }
 
 body{
