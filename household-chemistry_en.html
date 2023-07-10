@@ -8,37 +8,48 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Futura:wght@300;400;700&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/7.2.96/css/materialdesignicons.min.css" integrity="sha512-LX0YV/MWBEn2dwXCYgQHrpa9HJkwB+S+bnBpifSOTO1No27TqNMKYoAn6ff2FBh03THAzAiiCwQ+aPX+/Qt/Ow==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-          rel="stylesheet">
-    <script type="text/javascript" src="main.js"></script>
-</head>
-
-<body>
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, minimum-scale=1.0">
-    <title>Aerosol Service</title>
-    <link rel="icon" type="image/x-icon" href="public/img/favicon.ico">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;300;400;600;700;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 
     <script type="text/javascript" src="main.js"></script>
 </head>
+
+<body>
+
+<header id="start">
+    <div class="languages">
+        <a href="index.html"><p>PL</p></a>
+        <a href="index_en.html"><p>ENG</p></a>
+        <a href="index_fr.html"><p>FR</p></a>
+        <a href="index_de.html"><p>DE</p></a>
+        <a href="eu-projects_en.html"><img src="public/img/european-flag.webp" alt="europe-flag" class="languages__europe-flag"></a>
+    </div>
+    <nav>
+        <div class="header">
+            <a href="index_en.html"><img src="public/img/Aerosol_logo.svg" alt="logo" class="logo"></a>
+            <i onclick="toggleMenu()" class="material-icons">menu</i>
+        </div>
+        <ul id="menu" class="nav-list">
+            <li class="disappear"><a href="index_en.html"><img src="public/img/Aerosol_logo.svg" alt="logo" class="nav-list__logo"></a></li>
+            <li class="disappear__desktop"><a href="index_en.html">Home</a></li>
+            <!--      <li><a href="#news">Aktualności</a> </li>-->
+            <li><a href="areas-of-activity_en.html">Offer</a> </li>
+            <li><a href="about-us_en.html">About us</a> </li>
+            <li><a href="career_en.html">Career</a> </li>
+            <li><a href="contact_en.html">Contact</a> </li>
+            <li class="disappear"><a href="eu-projects_en.html"><img src="public/img/european-flag.webp" alt="#" class="nav-list__flag"></a></li>
+        </ul>
+    </nav>
+</header>
+
 <main class="cosmetics_main">
     <ul id="cosmetics" class="cosmetics">
         <li>
             <ul id="header" class="cosmetics__header">
 
                 <li class="cosmetics__header-picture">
-                    <img src="public/img/household%20chemicals.png" alt="cosmetics" class="cosmetics__header-picture">
+                    <img src="public/img/household%20chemicals.webp" alt="cosmetics" class="cosmetics__header-picture">
                 </li>
 
                 <li><h1 class="cosmetics__header-text-mobile">Household Chemistry</h1></li>
@@ -58,9 +69,7 @@
                         <li>Floor Cleaners</li>
                         <li>Window Cleaners</li>
                     </ul>
-                </li>
 
-                <li class="list__second-section-household">
                     <h2>Fresheners</h2>
                     <ul id="beard-cosmetics" class="beard-cosmetics">
                         <li>Aerosols</li>

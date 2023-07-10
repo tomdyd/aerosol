@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, minimum-scale=1.0">
+    <title>Aerosol Service</title>
+    <link rel="icon" type="image/x-icon" href="public/img/favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;300;400;600;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+    <script type="text/javascript" src="main.js"></script>
+</head>
+
+<body>
+
+<header id="start">
+    <div class="languages">
+        <a href="index.html"><p>PL</p></a>
+        <a href="index_en.html"><p>ENG</p></a>
+        <a href="index_fr.html"><p>FR</p></a>
+        <a href="index_de_html"><p>DE</p></a>
+        <a href="eu-projects_fr.html"><img src="public/img/european-flag.webp" alt="europe-flag" class="languages__europe-flag"></a>
+    </div>
+    <nav>
+        <div class="header">
+            <a href="index_fr.html"><img src="public/img/Aerosol_logo.svg" alt="logo" class="logo"></a>
+            <i onclick="toggleMenu()" class="material-icons">menu</i>
+        </div>
+        <ul id="menu" class="nav-list">
+            <li class="disappear"><a href="index_fr.html"><img src="public/img/Aerosol_logo.svg" alt="logo" class="nav-list__logo"></a></li>
+            <li class="disappear__desktop"><a href="index.html">Maison</a></li>
+            <!--      <li><a href="#news">Aktualności</a> </li>-->
+            <li><a href="areas-of-activity_fr.html">Offre</a> </li>
+            <li><a href="about-us_fr.html">À propos de nous</a> </li>
+            <li><a href="career_fr.html">Carrière</a> </li>
+            <li><a href="contact_fr.html">Contact</a> </li>
+            <li class="disappear"><a href="eu-projects_fr.html"><img src="public/img/european-flag.webp" alt="#" class="nav-list__flag"></a></li>
+        </ul>
+    </nav>
+</header>
+
+
+<main>
+    <img src="public/img/areas-of-activity_fr.webp" alt="obszary dzialania" class="areas-picture">
+
+    <section id="our-company" class="our-company-main">
+        <section id="product-development">
+            <ul class="areas-of-activity">
+                <li class="areas-of-activity__header">
+                    <h1>Développement de produits</h1>
+                    <p>Le département R&D d'Aerosol Service met l'accent sur l'innovation. Notre travail se base sur trois piliers. Nous réalisons des études de marché détaillées pour nous tenir au courant des tendences et satisfaire les besoins futurs du marché. Nous sommes à l'écoute de nos clients, en découvrant leurs attentes et en les transformant en solutions pratiques. Nous sommes fiers de cette coopération fondée sur leurs avis qui nous inspirent à créer les produits de qualité supérieure. Avec nous, vous découvrirez l'innovation qui ne connaît pas de limites. Réjoignez notre mission - ensemble, nous créons le futur.</p>
+                </li>
+                <li class="areas-of-activity-picture"><img src="public/img/rd.webp" alt="product development"></li>
+            </ul>
+        </section>
+
+        <section id="production">
+            <ul class="areas-of-activity">
+                <li class="areas-of-activity__header-left">
+                    <h1>Fabrication sous contrat</h1>
+                    <p>Nous sommes experts en remplissage d'une variété de récipients : aluminium, acier, verre et plastique PET, entre autres. Notre passion de la précision et la perfection nous inspire à fournir les services de qualité supérieure. Quels que soient vos besoins et spécifications, nous offrons les solutions adaptées à votre produit. Accédez au niveau supérieur avec notre service flexible de production sous contrat.</p>
+                </li>
+                <li class="areas-of-activity-picture-right"><img src="public/img/mantz.webp" alt="production"></li>
+            </ul>
+        </section>
+
+        <section id="Brand">
+            <ul class="areas-of-activity">
+                <li class="areas-of-activity__header">
+                    <h1>Marques privées</h1>
+                    <p>Nous créons les produits basés sur nos propres formules qui répondent à vos exigences particulières. Votre marque bénéficie des produits de qualité supérieure et de caractère authentique. Accédez au niveau supérieur avec notre service flexible et professionnelle pour les marques privées qui fidélise les clients et garantit le succès.</p>
+                </li>
+                <li class="areas-of-activity-picture"><img src="public/img/windoline.webp" alt="brand"></li>
+            </ul>
+        </section>
+
+        <section id="Packaging production">
+            <ul class="areas-of-activity">
+                <li class="areas-of-activity__header-left">
+                    <h1>Fabrication d'emballages</h1>
+                    <p>Nous fabriquons les récipients en aluminium de qualité supérieure. Grâce à nos propres lignes de production de conteneurs et de remplissage, ainsi qu'au département R&D experimenté, nous sommes en mesure de vous fournir un produit complet. Votre produit sera fabriqué de A à Z en un seul lieu, ce qui a une influence énorme sur la qualité et le délai d'exécution.</p>
+                </li>
+                <li class="areas-of-activity-picture-right"><img src="public/img/cans.webp" alt="packaging production"></li>
+            </ul>
+        </section>
+    </section>
+
+    <section class="products">
+        <ul class="products__list">
+            <li>
+                <a href="cosmetics_pl.html">
+                    <img src="public/img/cosmetics.webp" alt="" class="products__list__item-picture">
+                    <p class="products__list__item-text">Cosmétiques</p>
+                </a>
+            </li>
+            <li>
+                <a href="household-chemistry_pl.html">
+                    <img src="public/img/household%20chemicals.webp" alt="" class="products__list__item-picture">
+                    <p class="products__list__item-text">Chimie</p><p class="products__list__item-text">ménagère</p>
+                </a>
+            </li>
+            <li>
+                <a href="technical-chemicals_pl.html">
+                    <img src="public/img/technical-chemicals.webp" alt="" class="products__list__item-picture">
+                    <p class="products__list__item-text">Produits</p><p class="products__list__item-text">d'entretien</p>
+                </a>
+            </li>
+        </ul>
+    </section>
+
+    <section id="innovations" class="innovations">
+        <h1 class="innovations__header">Nos innovations</h1>
+        <section id="actuo">
+            <ul class="areas-of-activity">
+                <li class="areas-of-activity__header-left">
+                    <h1>Actuo</h1>
+                    <p>Actuo est le premier applicateur manipulable d'une seule main, sans avoir à tenir la boîte. Son design hors de commun rend l'application encore plus facile et permet de maintenir le produit propre, en assurant une meilleure hygiène lors de l'utilisation. Actuo convient aux récipients de toute taille et peut être utilisé avec plusieurs produits sous forme de mousse ou gel.</p>
+                    <ul class="field">
+                        <li><a href="https://actuo.pl/" target="_blank" class="field__button-left"><p>Actuo</p></a></li>
+                    </ul>
+                </li>
+                <li class="areas-of-activity-picture-right"><img src="public/img/actuo.webp" alt="product development"></li>
+            </ul>
+        </section>
+
+        <section id="spray'n'use">
+            <ul class="areas-of-activity">
+                <li class="areas-of-activity__header">
+                    <h1>Spray’n’Use</h1>
+                    <p>SPRAY’N’USE APPLICATOR est un produit 2 en 1. Il contient les mini-sprays interchangeables et un applicateur adapté à des besoins spécifiques. Il se distingue par son format poche, facilité d'utilisation et application précise. L'absence du contact direct avec les mains garantit la proprété et la sécurité. Le produit est hermétiquement fermé donc ne s'évapore pas ni ne se déverse pas.</p>
+                    <ul class="field">
+                        <li><a href="http://www.sprayanduse.com/" target="_blank" class="field__button-right"><p>Spray'n'use</p></a></li>
+                    </ul>
+                </li>
+                <li class="areas-of-activity-picture"><img src="public/img/spraynuse.webp" alt="product development"></li>
+            </ul>
+        </section>
+
+        <section id="Lesso" class="innovation">
+            <ul class="areas-of-activity">
+                <li class="areas-of-activity__header-left">
+                    <h1>Lesso</h1>
+                    <p>Lesso est un applicateur doseur conçu spécialement pour les aérosols à air compimé et en technologie sac sur valve. Son objectif principal est d'apprendre aux consommateurs d'utiliser le produit de façon informée. Une seule application suffit ! L'utilisation de Lesso est très facile. Une fois appuyé avec le doigt d'une côté, l'applicateur tournera. La conception spéciale de l'applicateur permet d'ouvrir temporairement la valve et d’appliquer la quantité adéquate de produit.</p>
+                    <ul class="field">
+                        <li><a href="https://lesso.pl/" target="_blank" class="field__button-left"><p>Lesso</p></a></li>
+                    </ul>
+
+                </li>
+                <li class="areas-of-activity-picture-right"><img src="public/img/lesso.webp" alt="product development"></li>
+            </ul>
+        </section>
+
+        <section id="Refillme" class="innovation">
+            <ul class="areas-of-activity">
+                <li class="areas-of-activity__header">
+                    <h1>Refillme</h1>
+                    <p>Refillme est la première solution sur le marché permettant de recharger les aérosols. Le produit se présente sous la forme d'une boîte en aluminium et d'un doypack, ce qui permet de recharger le produit original dans l'esprit de zero waste. Cette innovation respectueuse de l'environnement peut être employée avec plusieurs types de produits aux usages différents.</p>
+                </li>
+                <li class="areas-of-activity-picture"><img src="public/img/refillme.webp" alt="product development"></li>
+            </ul>
+        </section>
+    </section>
+</main>
+
+<footer id="footer" class="footer">
+    <ul class="footer__company-data">
+        <ul class="footer__picture">
+            <li><img src="public/img/AS.svg" alt="AS"></li>
+        </ul>
+        <ul class="footer__description">
+            <li><p>Aerosol Service Sp. z o.o.</p></li>
+            <li><p>Charnowo 36,</p></li>
+            <li><p>76-270 Ustka, Poland</p></li>
+            <li><p>NIP: 8393056472</p></li>
+        </ul>
+    </ul>
+    <ul class="footer__social-media">
+        <li><p>© Aerosol Service Sp. z o.o.</p></li>
+        <li><img src="public/img/Icon%20awesome-facebook-square.svg" alt="facebbok"><img src="public/img/Icon%20awesome-linkedin.svg" alt="linkedin"></li>
+    </ul>
+</footer>

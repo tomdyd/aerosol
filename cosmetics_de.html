@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, minimum-scale=1.0">
+    <title>Aerosol Service</title>
+    <link rel="icon" type="image/x-icon" href="public/img/favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;300;400;600;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+    <script type="text/javascript" src="main.js"></script>
+</head>
+
+<body>
+
+<header id="start">
+    <div class="languages">
+        <a href="index.html"><p>PL</p></a>
+        <a href="index_en.html"><p>ENG</p></a>
+        <a href="index_fr.html"><p>FR</p></a>
+        <a href="index_de.html"><p>DE</p></a>
+        <a href="eu-projects_de.html"><img src="public/img/european-flag.webp" alt="europe-flag" class="languages__europe-flag"></a>
+    </div>
+    <nav>
+        <div class="header">
+            <a href="index_de.html"><img src="public/img/Aerosol_logo.svg" alt="logo" class="logo"></a>
+            <i onclick="toggleMenu()" class="material-icons">menu</i>
+        </div>
+        <ul id="menu" class="nav-list">
+            <li class="disappear"><a href="index_de.html"><img src="public/img/Aerosol_logo.svg" alt="logo" class="nav-list__logo"></a></li>
+            <li class="disappear__desktop"><a href="index.html">Strona główna</a></li>
+            <!--      <li><a href="#news">Aktualności</a> </li>-->
+            <li><a href="areas-of-activity_de.html">Angebot</a> </li>
+            <li><a href="about-us_de.html">Uns treffen</a> </li>
+            <li><a href="career_de.html">Karriere</a> </li>
+            <li><a href="contact_de.html">Kontakt</a> </li>
+            <li class="disappear"><a href="eu-projects_de.html"><img src="public/img/european-flag.webp" alt="#" class="nav-list__flag"></a></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="cosmetics_main">
+    <ul id="cosmetics" class="cosmetics">
+        <li>
+            <ul id="header" class="cosmetics__header">
+
+                <li class="cosmetics__header-picture">
+                    <img src="public/img/cosmetics.webp" alt="cosmetics" class="cosmetics__header-picture">
+                </li>
+
+                <li><h1 class="cosmetics__header-text-mobile">Kosmetik</h1></li>
+
+            </ul>
+        </li>
+
+        <li>
+            <ul id="test" class="list">
+                <li>
+                    <h1 class="cosmetics__header-text-desktop">Kosmetik</h1>
+                    <h2>Produkte zur Körperpflege</h2>
+                    <ul id="body-cosmetics" class="body-cosmetics">
+                        <li>Deodorants und Antitranspirantien</li>
+                        <li>Duftende Körpersprays</li>
+                        <li>Körperemulsionen, -cremes und -balsame</li>
+                        <li>Sonnenschutzprodukte</li>
+                        <li>Produkte zur Körperreinigung</li>
+                    </ul>
+
+                    <h2>Produkte für die Haarpflege</h2>
+                    <ul id="hair-cosmetics" class="hair-cosmetics">
+                        <li>Haarsprays und Haarschäume</li>
+                        <li>Haarmist</li>
+                        <li>Shampoos</li>
+                        <li>Haarkuren</li>
+                        <li>Spray zur Ansatzabdeckung</li>
+                    </ul>
+                </li>
+
+                <li class="list__second-section">
+                    <h2>Produkte zur Bartpflege</h2>
+                    <ul id="beard-cosmetics" class="beard-cosmetics">
+                        <li>Rasierschaum und Rasiergel</li>
+                        <li>Bartöle</li>
+                        <li>Bartshampoos</li>
+                    </ul>
+
+                    <h2>Hygiene und Desinfektion</h2>
+                    <ul id="hygiene-and-disinfection" class="hygiene_disinfection">
+                        <li>Seife für die Hände</li>
+                        <li>Desinfektionsgels und -flüssigkeiten</li>
+                        <li>Desinfektionsflüssigkeiten für Oberflächen</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+
+    </ul>
+</main>
+
+<footer id="footer" class="footer">
+    <ul class="footer__company-data">
+        <ul class="footer__picture">
+            <li><img src="public/img/AS.svg" alt="AS"></li>
+        </ul>
+        <ul class="footer__description">
+            <li><p>Aerosol Service Sp. z o.o.</p></li>
+            <li><p>Charnowo 36,</p></li>
+            <li><p>76-270 Ustka, Poland</p></li>
+            <li><p>NIP: 8393056472</p></li>
+        </ul>
+    </ul>
+    <ul class="footer__social-media">
+        <li><p>© Aerosol Service Sp. z o.o.</p></li>
+        <li><img src="public/img/Icon%20awesome-facebook-square.svg" alt="facebbok"><img src="public/img/Icon%20awesome-linkedin.svg" alt="linkedin"></li>
+    </ul>
+</footer>

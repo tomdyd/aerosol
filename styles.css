@@ -247,7 +247,7 @@
 }
 @media (min-width: 768px) {
   .about-us-info__header-left h1 {
-    justify-content: flex-end;
+    justify-content: flex-start;
     margin: 0 5vw 3vh 15vw;
     text-align: left;
   }
@@ -746,7 +746,7 @@ body {
   .order__benefits__header {
     margin: 0 0 40px 15vw;
     font-size: 3vw;
-    width: 25%;
+    width: 28%;
     text-align: left;
   }
 }
@@ -806,7 +806,7 @@ body {
 .departments {
   background-color: #e4e4e4;
   color: #707070;
-  padding: 0 0 30px 0;
+  padding: 0;
 }
 .departments__contact {
   display: flex;
@@ -850,6 +850,16 @@ body {
 .departments__contact__text__section {
   padding: 0;
   margin: 15px 0 0 0;
+}
+.departments__contact__map {
+  width: 100%;
+  height: 25vw;
+  margin: 10vw 0 0 0;
+}
+@media (min-width: 768px) {
+  .departments__contact__map {
+    margin: 0;
+  }
 }
 
 .cosmetics_main {
@@ -937,6 +947,7 @@ body {
 @media (min-width: 768px) {
   .body-cosmetics {
     padding: 0 0 0 2vw;
+    width: 80%;
   }
 }
 .body-cosmetics h2 {
@@ -1020,7 +1031,7 @@ body {
 }
 @media (min-width: 768px) {
   .list__second-section {
-    margin: 1.5vw 0 0 5vw;
+    margin: 2.5vw 0 0 5vw;
   }
 }
 .list__second-section-household {
@@ -1028,7 +1039,7 @@ body {
 }
 @media (min-width: 768px) {
   .list__second-section-household {
-    margin: 5.3vw 0 0 5vw;
+    margin: 7.5vw 0 0 5vw;
   }
 }
 .list__second-section-technical {
@@ -1036,7 +1047,7 @@ body {
 }
 @media (min-width: 768px) {
   .list__second-section-technical {
-    margin: 7.5vw 0 0 5vw;
+    margin: 10vw 0 0 5vw;
   }
 }
 

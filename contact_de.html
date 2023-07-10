@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, minimum-scale=1.0">
+    <title>Aerosol Service</title>
+    <link rel="icon" type="image/x-icon" href="public/img/favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;300;400;600;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+    <script type="text/javascript" src="main.js"></script>
+</head>
+
+<body>
+
+<header id="start">
+    <div class="languages">
+        <a href="index.html"><p>PL</p></a>
+        <a href="index_en.html"><p>ENG</p></a>
+        <a href="index_fr.html"><p>FR</p></a>
+        <a href="index_de.html"><p>DE</p></a>
+        <a href="eu-projects_de.html"><img src="public/img/european-flag.webp" alt="europe-flag" class="languages__europe-flag"></a>
+    </div>
+    <nav>
+        <div class="header">
+            <a href="index_de.html"><img src="public/img/Aerosol_logo.svg" alt="logo" class="logo"></a>
+            <i onclick="toggleMenu()" class="material-icons">menu</i>
+        </div>
+        <ul id="menu" class="nav-list">
+            <li class="disappear"><a href="index_de.html"><img src="public/img/Aerosol_logo.svg" alt="logo" class="nav-list__logo"></a></li>
+            <li class="disappear__desktop"><a href="index.html">Strona główna</a></li>
+            <!--      <li><a href="#news">Aktualności</a> </li>-->
+            <li><a href="areas-of-activity_de.html">Angebot</a> </li>
+            <li><a href="about-us_de.html">Uns treffen</a> </li>
+            <li><a href="career_de.html">Karriere</a> </li>
+            <li><a href="contact_de.html">Kontakt</a> </li>
+            <li class="disappear"><a href="eu-projects_de.html"><img src="public/img/european-flag.webp" alt="#" class="nav-list__flag"></a></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="departments">
+    <img src="public/img/contact_de.webp" alt="contact" class="contact-picture">
+    <ul class="departments__contact">
+        <li id="secretariat">
+            <h1 class="departments__contact__header">Büro</h1>
+            <ul class="departments__contact__text__section">
+                <p class="departments__contact__text">Nr telefonu</p>
+                <p class="departments__contact__text">+48 530 430 421</p>
+                <p class="departments__contact__text">+48 59 863 70 00</p>
+            </ul>
+            <ul class="departments__contact__text__section">
+                <p class="departments__contact__text">Email:</p>
+                <p class="departments__contact__text">ofﬁce@aerosol.pl</p>
+            </ul>
+        </li>
+
+        <li id="sales-department">
+            <h1 class="departments__contact__header">Vertriebsabteilung</h1>
+            <ul class="departments__contact__text__section">
+                <p class="departments__contact__text">Telefonnummer</p>
+                <p class="departments__contact__text">+48 59 863 70 00</p>
+            </ul>
+            <ul class="departments__contact__text__section">
+                <p class="departments__contact__text">Email:</p>
+                <p class="departments__contact__text">sales@aerosol.pl</p>
+            </ul>
+        </li>
+
+        <li id="HR-department">
+            <h1 class="departments__contact__header">Personalabteilung</h1>
+            <ul class="departments__contact__text__section">
+                <p class="departments__contact__text">Telefonnummer</p>
+                <p class="departments__contact__text">+48 59 863 70 02</p>
+            </ul>
+            <ul class="departments__contact__text__section">
+                <p class="departments__contact__text">Email:</p>
+                <p class="departments__contact__text">hr@aerosol.pl</p>
+            </ul>
+        </li>
+    </ul>
+    <section id="map">
+        <iframe class="departments__contact__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62264.94800096532!2d16.945189423553234!3d54.50777812092304!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46fe161fee009419%3A0x738abebec04b0585!2sAerosol%20Service!5e0!3m2!1spl!2spl!4v1688706164638!5m2!1spl!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>    </section>
+</main>
+
+<footer id="footer" class="footer">
+    <ul class="footer__company-data">
+        <ul class="footer__picture">
+            <li><img src="public/img/AS.svg" alt="AS"></li>
+        </ul>
+        <ul class="footer__description">
+            <li><p>Aerosol Service Sp. z o.o.</p></li>
+            <li><p>Charnowo 36,</p></li>
+            <li><p>76-270 Ustka, Poland</p></li>
+            <li><p>NIP: 8393056472</p></li>
+        </ul>
+    </ul>
+    <ul class="footer__social-media">
+        <li><p>© Aerosol Service Sp. z o.o.</p></li>
+        <li><img src="public/img/Icon%20awesome-facebook-square.svg" alt="facebbok"><img src="public/img/Icon%20awesome-linkedin.svg" alt="linkedin"></li>
+    </ul>
+</footer>

@@ -82,6 +82,7 @@
 
   @media (min-width: $breakpointHD) {
     padding: 0 0 0 2vw;
+    width: 80%;
   }
 
   h2{
@@ -159,21 +160,21 @@
   &__second-section{
     width: 100%;
     @media (min-width: $breakpointHD) {
-      margin: 1.5vw 0 0 5vw;
+      margin: 2.5vw 0 0 5vw;
     }
   }
 
   &__second-section-household{
     width: 100%;
     @media (min-width: $breakpointHD) {
-      margin: 5.3vw 0 0 5vw;
+      margin: 7.5vw 0 0 5vw;
     }
   }
 
   &__second-section-technical{
     width: 100%;
     @media (min-width: $breakpointHD) {
-      margin: 7.5vw 0 0 5vw;
+      margin: 10vw 0 0 5vw;
     }
   }
 }
