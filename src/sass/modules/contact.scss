@@ -54,10 +54,11 @@
 
     &__map{
       width: 100%;
-      height: 25vw;
+      height: 40vw;
       margin: 10vw 0 0 0;
 
       @media (min-width: $breakpointHD) {
+        height: 25vw;
         margin: 0;
       }
     }
